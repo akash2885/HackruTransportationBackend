@@ -17,11 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from fuel.views import FuelViewset
-
+from routes.views import RouteViewset
 
 router = DefaultRouter()
-router.register('Fuel', FuelViewset)
+router.register('routes', RouteViewset)
 
 
 urlpatterns = [
